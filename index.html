@@ -24,6 +24,8 @@
     <link rel="icon" type="text/css" href="imagens/images.png" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="menu.js" defer></script>
+    <!-- SUPABASE SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script type="importmap">
 {
   "imports": {
@@ -300,8 +302,7 @@
         <div class="interface">
           <h2 class="titulo">FALA <span class="destaque">COMIGO.</span></h2>
           
-          <form action="https://formsubmit.co/fednerdab@gmail.com" method="POST">
-            <input type="hidden" name="_template" value="table" />
+          <form id="contact-form">
             
             <div class="input-group">
               <input type="text" name="name" placeholder="Nome completo" required />
@@ -354,6 +355,47 @@
     <div class="btn-scroll-top" id="btn-scroll-top">
       <i class="bi bi-arrow-up-short"></i>
     </div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+    <script>
+      // SUPABASE CONFIGURATION
+      const SUPABASE_URL = "https://dqfaoduipwqcbcrbmvlb.supabase.co";
+      const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRxZmFvZHVpcHdxY2JjcmJtdmxiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njk4MTE0NTksImV4cCI6MjA4NTM4NzQ1OX0.EkJhLWQ41VfiDoAZOMUBttLJ7N3Uc5Mp7gsuBftJtWc";
+      const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+      const form = document.getElementById('contact-form');
+      const btnEnviar = form.querySelector('.btn-enviar button');
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        btnEnviar.disabled = true;
+        btnEnviar.innerText = "ENVIANDO...";
+
+        const formData = new FormData(form);
+        const data = {
+          name: formData.get('name'),
+          email: formData.get('email'),
+          phone: formData.get('phone'),
+          message: formData.get('mensagem')
+        };
+
+        try {
+          const { error } = await supabaseClient
+            .from('contacts')
+            .insert([data]);
+
+          if (error) throw error;
+
+          alert("Mensagem enviada com sucesso!");
+          form.reset();
+        } catch (error) {
+          console.error('Erro ao enviar mensagem:', error.message);
+          alert("Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente.");
+        } finally {
+          btnEnviar.disabled = false;
+          btnEnviar.innerText = "ENVIAR MENSAGEM";
+        }
+      });
+    </script>
+  </body>
 </html>
