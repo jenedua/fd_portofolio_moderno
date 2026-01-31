@@ -1,0 +1,1 @@
+// React entry point disabled. Using static index.html structure.
