@@ -934,3 +934,55 @@ footer {
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .interface {
+    padding: 0 5%;
+  }
+
+  .txt-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .txt-hero p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .btn-action {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn-primary, .btn-secondary {
+    padding: 14px 20px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
+
+  h2.titulo {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  .img-hero .img-container {
+    height: 320px;
+  }
+
+  .card-especialidade {
+    padding: 40px 25px;
+  }
+
+  .card-projeto {
+    height: 300px;
+  }
+
+  .overlay-projeto {
+    padding: 25px;
+  }
+
+  .overlay-projeto h3 {
+    font-size: 1.5rem;
+  }
+}

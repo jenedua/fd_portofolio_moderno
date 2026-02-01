@@ -2,3 +2,4 @@ info supoabase
 Database password: !7+&%eH5@S7!KAF
 Project name: fd_portfolio_moderno
 acess token: sbp_8bbd6b24b576fe727eda5026850bbb33d7550128
+ https://portofolio-moderno.web.app
