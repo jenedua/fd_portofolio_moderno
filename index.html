@@ -3,9 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agencia FD | Portfolio</title>
+    <title>Agencia FD | Desenvolvimento de Software, Sites e Sistemas</title>
     <meta name="author" content="Fedner Dabady" />
-    <meta name="description" content="Portfolio de Desenvolvimento Web Full Stack" />
+    <meta
+      name="description"
+      content="Agencia FD cria sites, sistemas sob medida, automacoes e experiencias digitais para empresas que querem vender mais e operar melhor."
+    />
+    <meta name="theme-color" content="#050505" />
+    <meta property="og:title" content="Agencia FD | Desenvolvimento de Software" />
+    <meta
+      property="og:description"
+      content="Sites, sistemas e plataformas digitais com design moderno, performance e foco em resultado."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="imagens/logoNovo-site.png" />
+    <meta name="twitter:card" content="summary_large_image" />
     
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,21 +33,11 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
     
-    <link rel="icon" type="text/css" href="imagens/images.png" />
+    <link rel="icon" type="image/png" href="imagens/logoNovo-icon.png" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="menu.js" defer></script>
+    <script type="module" src="menu.js"></script>
     <!-- SUPABASE SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.3",
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
-    "react/": "https://esm.sh/react@^19.2.3/"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body>
     
@@ -43,11 +45,7 @@
       <div class="interface">
         <div class="logo">
           <a href="#">
-            <div class="logo-icon">
-              <!-- New Geometric "Layers" Icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>
-            </div>
-            <span class="logo-text">Agencia<span class="destaque">FD</span></span>
+            <img src="imagens/logoNovo-site.png" alt="Agencia FD" class="logo-img" />
           </a>
         </div>
 
@@ -63,7 +61,7 @@
 
         <div class="btn-contato-header">
           <a href="#contato">
-            <button>Contato</button>
+            <button>Or&ccedil;amento</button>
           </a>
         </div>
 
@@ -84,7 +82,7 @@
               <li><a href="#sobre" class="mobile-link">Sobre</a></li>
               <li><a href="#projetos" class="mobile-link">Projetos</a></li>
               <li><a href="#depoimentos" class="mobile-link">Depoimentos</a></li>
-              <li><a href="#contato" class="mobile-link">Contato</a></li>
+              <li><a href="#contato" class="mobile-link">Or&ccedil;amento</a></li>
             </ul>
           </nav>
         </div>
@@ -97,17 +95,32 @@
         <div class="interface">
           <div class="flex-hero">
             <div class="txt-hero">
-              <h1>TRANSFORMANDO IDEIAS EM <span class="destaque">REALIDADE DIGITAL.</span></h1>
+              <span class="hero-kicker">Agencia FD - Desenvolvimento de Software</span>
+              <h1>SISTEMAS, SITES E PLATAFORMAS DIGITAIS QUE <span class="destaque">GERAM RESULTADO.</span></h1>
               <p>
-                Criatividade e inovação andam lado a lado. Com uma combinação
-                única de design impactante, funcionalidade intuitiva e
-                otimização para resultados, estou pronto para criar a presença
-                online dos seus sonhos.
+                Criamos solu&ccedil;&otilde;es digitais sob medida para empresas que precisam
+                vender melhor, automatizar processos e fortalecer sua presen&ccedil;a online
+                com tecnologia, design e estrat&eacute;gia.
               </p>
 
               <div class="btn-action">
-                <a href="#contato" class="btn-primary">Entre em contato</a>
-                <a href="#projetos" class="btn-secondary">Ver Projetos</a>
+                <a href="#contato" class="btn-primary">Solicitar or&ccedil;amento</a>
+                <a href="#projetos" class="btn-secondary">Ver cases</a>
+              </div>
+
+              <div class="hero-proof">
+                <div>
+                  <strong>Full stack</strong>
+                  <span>Do layout ao banco de dados</span>
+                </div>
+                <div>
+                  <strong>Sob medida</strong>
+                  <span>Solu&ccedil;&otilde;es para seu fluxo real</span>
+                </div>
+                <div>
+                  <strong>Performance</strong>
+                  <span>Sites r&aacute;pidos e responsivos</span>
+                </div>
               </div>
             </div>
 
@@ -121,29 +134,66 @@
         </div>
       </section>
 
+      <section class="diferenciais" aria-label="Diferenciais da Agencia FD">
+        <div class="interface">
+          <div class="diferenciais-grid">
+            <div class="diferencial-item">
+              <i class="bi bi-diagram-3"></i>
+              <h3>Planejamento claro</h3>
+              <p>Escopo, prioridade e entrega organizados antes da primeira linha de c&oacute;digo.</p>
+            </div>
+            <div class="diferencial-item">
+              <i class="bi bi-window-sidebar"></i>
+              <h3>Design funcional</h3>
+              <p>Interfaces modernas, diretas e pensadas para o usu&aacute;rio encontrar o que precisa.</p>
+            </div>
+            <div class="diferencial-item">
+              <i class="bi bi-lightning-charge"></i>
+              <h3>Velocidade e SEO</h3>
+              <p>Estrutura leve, responsiva e preparada para boa experi&ecirc;ncia em mobile.</p>
+            </div>
+            <div class="diferencial-item">
+              <i class="bi bi-plug"></i>
+              <h3>Integra&ccedil;&otilde;es</h3>
+              <p>Conex&atilde;o com APIs, formul&aacute;rios, bancos de dados e automa&ccedil;&otilde;es.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="especialidades" id="especialidades">
         <div class="interface">
-          <h2 class="titulo">MINHAS <span class="destaque">ESPECIALIDADES.</span></h2>
+          <h2 class="titulo">SOLU&Ccedil;&Otilde;ES PARA <span class="destaque">CRESCER NO DIGITAL.</span></h2>
+          <p class="section-lead">
+            Desenvolvimento focado em presen&ccedil;a online, opera&ccedil;&atilde;o eficiente e sistemas que acompanham o crescimento do seu neg&oacute;cio.
+          </p>
           <div class="grid-especialidades">
             <div class="card-especialidade">
               <i class="bi bi-code-square"></i>
-              <h3>Desenvolvimento Web</h3>
+              <h3>Sites profissionais</h3>
               <p>
-                Criação de sites modernos e responsivos utilizando as melhores práticas do mercado como HTML5, CSS3, JavaScript e React.
+                Cria&ccedil;&atilde;o de sites modernos, responsivos e otimizados para apresentar sua marca com autoridade.
               </p>
             </div>
             <div class="card-especialidade">
               <i class="bi bi-cart"></i>
-              <h3>Sistemas de Gestão</h3>
+              <h3>Sistemas de gest&atilde;o</h3>
               <p>
-                Desenvolvimento de sistemas robustos para gerenciamento de processos, controle financeiro e ERPs personalizados.
+                Plataformas sob medida para organizar processos, clientes, financeiro, produtos e opera&ccedil;&otilde;es internas.
               </p>
             </div>
             <div class="card-especialidade">
               <i class="bi bi-wordpress"></i>
-              <h3>WordPress</h3>
+              <h3>Landing pages</h3>
               <p>
-                Implementação e personalização de temas e plugins para WordPress, garantindo autonomia na gestão de conteúdo.
+                P&aacute;ginas com estrutura clara, carregamento r&aacute;pido e chamadas pensadas para transformar visitantes em contatos.
+              </p>
+            </div>
+            <div class="card-especialidade">
+              <i class="bi bi-hdd-network"></i>
+              <h3>APIs e automa&ccedil;&otilde;es</h3>
+              <p>
+                Integra&ccedil;&atilde;o entre ferramentas, formul&aacute;rios, bancos de dados e servi&ccedil;os para reduzir trabalho manual.
               </p>
             </div>
           </div>
@@ -154,20 +204,19 @@
         <div class="interface">
           <div class="flex-sobre">
             <div class="img-sobre-container">
-              <img src="imagens/foto-blaze-preto.png" alt="Sobre Mim" loading="lazy" />
+              <img src="imagens/foto-blaze-preto.png" alt="Fedner Dabady, desenvolvedor da Agencia FD" loading="lazy" />
             </div>
             <div class="txt-sobre">
-              <h2>MUITO PRAZER, <span class="destaque">SOU FEDNER DABADY</span></h2>
+              <h2>TECNOLOGIA COM <span class="destaque">VIS&Atilde;O DE NEG&Oacute;CIO</span></h2>
               <div class="sobre-content">
                 <p>
-                  Sou um desenvolvedor de sistemas de informação com mais de cinco
-                  anos de experiência na área. Minha paixão é transformar problemas complexos em soluções digitais simples e eficientes.
+                  A Agencia FD nasceu para transformar ideias em produtos digitais claros, bonitos e funcionais. Cada projeto parte de uma conversa sobre o problema real antes de virar tela, c&oacute;digo e entrega.
                 </p>
                 <p>
-                  Graduado em Ciência da Computação pela UNASMOH, possuo um arsenal técnico que inclui <strong>PHP (Laravel), JavaScript (React, Vue, Node.js)</strong> e bancos de dados SQL.
+                  Com experi&ecirc;ncia em <strong>PHP, Laravel, JavaScript, React, Vue, Node.js</strong> e bancos de dados SQL, desenvolvemos solu&ccedil;&otilde;es completas para empresas que precisam de presen&ccedil;a digital e sistemas confi&aacute;veis.
                 </p>
                 <p>
-                  Sou proativo e disciplinado, sempre focado em entregar qualidade e performance em cada linha de código.
+                  O foco &eacute; entregar tecnologia que seja simples de usar, f&aacute;cil de evoluir e alinhada ao resultado que o cliente quer alcan&ccedil;ar.
                 </p>
               </div>
               <div class="social-links">
@@ -182,16 +231,25 @@
 
       <section class="projetos" id="projetos">
         <div class="interface">
-          <h2 class="titulo">MEUS <span class="destaque">PROJETOS.</span></h2>
+          <h2 class="titulo">CASES E <span class="destaque">PROJETOS.</span></h2>
+          <p class="section-lead">
+            Alguns projetos que mostram a combina&ccedil;&atilde;o entre backend, frontend, interface e integra&ccedil;&atilde;o com dados.
+          </p>
           
           <div class="grid-projetos">
             <div class="card-projeto">
               <img src="imagens/php.jpg" alt="Gerenciador de Contas" loading="lazy" />
               <div class="overlay-projeto">
+                <span class="projeto-tag">Sistema web</span>
                 <h3>Gerenciador de Contas</h3>
-                <p>Sistema Laravel 10</p>
+                <p>Controle financeiro com estrutura Laravel, autentica&ccedil;&atilde;o e organiza&ccedil;&atilde;o de registros.</p>
+                <div class="projeto-stack">
+                  <span>Laravel</span>
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                </div>
                 <a href="https://github.com/jenedua/laravel-10-Gerenciarcontas" target="_blank">
-                  Ver Repositório <i class="bi bi-arrow-right"></i>
+                  Ver no GitHub <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
             </div>
@@ -199,10 +257,16 @@
             <div class="card-projeto">
               <img src="imagens/guia-js.png" alt="HDC Events" loading="lazy" />
               <div class="overlay-projeto">
+                <span class="projeto-tag">Eventos</span>
                 <h3>HDC Events</h3>
-                <p>JavaScript & HTML</p>
+                <p>Interface para divulga&ccedil;&atilde;o e organiza&ccedil;&atilde;o de eventos com foco em experi&ecirc;ncia simples.</p>
+                <div class="projeto-stack">
+                  <span>JavaScript</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                </div>
                 <a href="https://github.com/jenedua/HDCEVENTS/tree/master" target="_blank">
-                  Ver Repositório <i class="bi bi-arrow-right"></i>
+                  Ver no GitHub <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
             </div>
@@ -210,10 +274,16 @@
             <div class="card-projeto">
               <img src="imagens/react.webp" alt="Fedner Store" loading="lazy" />
               <div class="overlay-projeto">
+                <span class="projeto-tag">E-commerce</span>
                 <h3>Fedner Store</h3>
-                <p>E-commerce React</p>
+                <p>Loja virtual com experi&ecirc;ncia moderna, componentes reutiliz&aacute;veis e fluxo de compra direto.</p>
+                <div class="projeto-stack">
+                  <span>React</span>
+                  <span>UI</span>
+                  <span>Storefront</span>
+                </div>
                 <a href="https://github.com/jenedua/fedner-store" target="_blank">
-                  Ver Repositório <i class="bi bi-arrow-right"></i>
+                  Ver no GitHub <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
             </div>
@@ -221,10 +291,16 @@
             <div class="card-projeto">
               <img src="imagens/typescript.webp" alt="Decorators TS" loading="lazy" />
               <div class="overlay-projeto">
+                <span class="projeto-tag">Arquitetura</span>
                 <h3>Decorators TS</h3>
-                <p>TypeScript Avançado</p>
+                <p>Estudo avan&ccedil;ado de TypeScript para criar c&oacute;digo mais organizado, seguro e escal&aacute;vel.</p>
+                <div class="projeto-stack">
+                  <span>TypeScript</span>
+                  <span>OOP</span>
+                  <span>Patterns</span>
+                </div>
                 <a href="https://github.com/jenedua/decorators-typescript/tree/master" target="_blank">
-                  Ver Repositório <i class="bi bi-arrow-right"></i>
+                  Ver no GitHub <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
             </div>
@@ -232,10 +308,16 @@
             <div class="card-projeto">
               <img src="imagens/nodejs-256.png" alt="Vue & Axios" loading="lazy" />
               <div class="overlay-projeto">
+                <span class="projeto-tag">Integra&ccedil;&atilde;o</span>
                 <h3>Vue & Axios</h3>
-                <p>Integração API</p>
+                <p>Consumo de APIs com Vue e Axios para conectar interfaces a dados externos com fluidez.</p>
+                <div class="projeto-stack">
+                  <span>Vue</span>
+                  <span>Axios</span>
+                  <span>API</span>
+                </div>
                 <a href="https://github.com/jenedua/vue-router-e-axios" target="_blank">
-                  Ver Repositório <i class="bi bi-arrow-right"></i>
+                  Ver no GitHub <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
             </div>
@@ -246,6 +328,9 @@
       <section class="depoimentos" id="depoimentos">
         <div class="interface">
           <h2 class="titulo">FEEDBACK DOS <span class="destaque">CLIENTES.</span></h2>
+          <p class="section-lead">
+            Depoimentos que refor&ccedil;am o compromisso com prazo, comunica&ccedil;&atilde;o e qualidade t&eacute;cnica.
+          </p>
           
           <div class="grid-depoimentos">
             
@@ -254,7 +339,7 @@
                 <i class="bi bi-quote"></i>
               </div>
               <p class="texto-depoimento">
-                "O Fedner transformou completamente a nossa presença online. O sistema de gestão que ele desenvolveu automatizou processos que antes levavam dias. Profissionalismo ímpar!"
+                "A Agencia FD transformou completamente a nossa presen&ccedil;a online. O sistema de gest&atilde;o automatizou processos que antes levavam dias. Profissionalismo &iacute;mpar!"
               </p>
               <div class="info-cliente">
                 <div class="nome-cliente">
@@ -269,7 +354,7 @@
                 <i class="bi bi-quote"></i>
               </div>
               <p class="texto-depoimento">
-                "Excelente desenvolvedor! Entregou o projeto antes do prazo e com uma qualidade de código impressionante. O site ficou rápido e responsivo."
+                "Excelente entrega! O projeto ficou pronto antes do prazo, com qualidade de c&oacute;digo impressionante. O site ficou r&aacute;pido e responsivo."
               </p>
               <div class="info-cliente">
                 <div class="nome-cliente">
@@ -289,7 +374,7 @@
               <div class="info-cliente">
                 <div class="nome-cliente">
                   <h4>Ricardo Oliveira</h4>
-                  <span>Empresário</span>
+                  <span>Empres&aacute;rio</span>
                 </div>
               </div>
             </div>
@@ -300,7 +385,10 @@
 
       <section class="formulario" id="contato">
         <div class="interface">
-          <h2 class="titulo">FALA <span class="destaque">COMIGO.</span></h2>
+          <h2 class="titulo">VAMOS CRIAR <span class="destaque">SEU PROJETO?</span></h2>
+          <p class="section-lead">
+            Conte o que voc&ecirc; precisa construir. A Agencia FD responde com um caminho claro para transformar a ideia em solu&ccedil;&atilde;o.
+          </p>
           
           <form id="contact-form">
             
@@ -317,11 +405,11 @@
             </div>
             
             <div class="input-group">
-              <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+              <textarea name="mensagem" placeholder="Conte brevemente sobre o projeto que voc&ecirc; quer desenvolver" required></textarea>
             </div>
             
             <div class="btn-enviar">
-              <button type="submit">ENVIAR MENSAGEM</button>
+              <button type="submit">SOLICITAR OR&Ccedil;AMENTO</button>
             </div>
           </form>
         </div>
@@ -332,7 +420,7 @@
       <div class="interface">
         <div class="footer-content">
           <div class="logo-footer">
-            <h2>Agencia<span class="destaque">FD</span></h2>
+            <img src="imagens/logoNovo-site.png" alt="Agencia FD" class="footer-logo-img" />
           </div>
           
           <div class="social-footer">
@@ -347,7 +435,7 @@
             <i class="bi bi-envelope-fill"></i>
             <a href="mailto:fednerdab@gmail.com">fednerdab@gmail.com</a>
           </p>
-          <p class="copyright">&copy; 2024 Fedner Dabady. Todos os direitos reservados.</p>
+          <p class="copyright">&copy; 2024 Agencia FD. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
@@ -355,7 +443,6 @@
     <div class="btn-scroll-top" id="btn-scroll-top">
       <i class="bi bi-arrow-up-short"></i>
     </div>
-    <script type="module" src="/index.tsx"></script>
     <script>
       // SUPABASE CONFIGURATION
       const SUPABASE_URL = "https://dqfaoduipwqcbcrbmvlb.supabase.co";
@@ -393,11 +480,11 @@
           alert("Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente.");
         } finally {
           btnEnviar.disabled = false;
-          btnEnviar.innerText = "ENVIAR MENSAGEM";
+          btnEnviar.innerHTML = "SOLICITAR OR&Ccedil;AMENTO";
         }
       });
     </script>
-    <a href="https://wa.me/5541991765022" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/5541991765022" class="whatsapp-float" target="_blank" aria-label="Falar com a Agencia FD no WhatsApp">
       <i class="bi bi-whatsapp"></i>
     </a>
   </body>

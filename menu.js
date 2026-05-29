@@ -5,17 +5,17 @@ let linksMenu = document.querySelectorAll(".mobile-link");
 let btnScrollTop = document.getElementById("btn-scroll-top");
 let header = document.getElementById("header");
 
-// Lógica do Menu Mobile
+// Logica do menu mobile
 btnMenu.addEventListener('click', () => {
     menu.classList.add('abrir-menu');
     overlay.style.display = 'block';
 });
 
-menu.addEventListener('click', (e) => {
-    // Fecha apenas se clicar fora do conteúdo da nav (opcional, aqui mantive o comportamento do botão fechar)
+menu.addEventListener('click', () => {
+    // Mantem o menu aberto ao clicar na area interna.
 });
 
-// Fechar com o botão X
+// Fechar com o botao X
 document.querySelector('.btn-fechar').addEventListener('click', () => {
     menu.classList.remove('abrir-menu');
     overlay.style.display = 'none';
@@ -35,7 +35,7 @@ linksMenu.forEach(link => {
     });
 });
 
-// Lógica do Scroll (Header e Btn Top)
+// Logica do scroll (header e botao voltar ao topo)
 window.addEventListener('scroll', () => {
     // Header Effect
     if (window.scrollY > 50) {
